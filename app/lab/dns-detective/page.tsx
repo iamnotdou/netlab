@@ -1,4 +1,5 @@
 import { LabShell } from "@/components/lab/lab-shell";
+import { DnsDetective } from "@/components/lab/dns-detective/dns-detective";
 import { getModule } from "@/lib/modules";
 
 const MODULE = getModule("dns-detective")!;
@@ -16,9 +17,7 @@ export default function Page() {
       chapter={MODULE.chapter}
       topics={MODULE.topics}
     >
-      <div className="rounded-xl border border-dashed border-border bg-card p-10 text-center text-muted-foreground">
-        Coming online — recursive resolver graph will mount here.
-      </div>
+      <DnsDetective />
     </LabShell>
   );
 }
