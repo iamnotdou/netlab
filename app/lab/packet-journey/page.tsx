@@ -1,4 +1,5 @@
 import { LabShell } from "@/components/lab/lab-shell";
+import { PacketJourney } from "@/components/lab/packet-journey/packet-journey";
 import { getModule } from "@/lib/modules";
 
 const MODULE = getModule("packet-journey")!;
@@ -16,9 +17,7 @@ export default function Page() {
       chapter={MODULE.chapter}
       topics={MODULE.topics}
     >
-      <div className="rounded-xl border border-dashed border-border bg-card p-10 text-center text-muted-foreground">
-        Coming online — animation engine will mount here.
-      </div>
+      <PacketJourney />
     </LabShell>
   );
 }
