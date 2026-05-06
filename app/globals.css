@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-background: hsl(220 24% 98%);
+  --color-foreground: hsl(220 22% 12%);
+  --color-muted: hsl(220 14% 94%);
+  --color-muted-foreground: hsl(220 12% 42%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(220 22% 12%);
+  --color-border: hsl(220 14% 88%);
+  --color-input: hsl(220 14% 92%);
+  --color-ring: hsl(245 80% 60%);
+  --color-primary: hsl(245 80% 58%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(220 14% 94%);
+  --color-secondary-foreground: hsl(220 22% 12%);
+  --color-accent: hsl(160 70% 42%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-warn: hsl(38 92% 50%);
+  --color-danger: hsl(0 72% 56%);
+  --color-layer-app: hsl(245 80% 60%);
+  --color-layer-transport: hsl(190 80% 48%);
+  --color-layer-network: hsl(160 70% 42%);
+  --color-layer-link: hsl(38 92% 50%);
+  --color-layer-physical: hsl(0 0% 60%);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+
+  --shadow-soft: 0 4px 24px -8px rgb(15 23 42 / 0.08);
+  --shadow-glow: 0 0 0 1px rgb(99 102 241 / 0.18), 0 8px 32px -12px rgb(99 102 241 / 0.35);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --color-background: hsl(225 30% 6%);
+  --color-foreground: hsl(220 18% 96%);
+  --color-muted: hsl(225 18% 14%);
+  --color-muted-foreground: hsl(220 12% 64%);
+  --color-card: hsl(225 26% 9%);
+  --color-card-foreground: hsl(220 18% 96%);
+  --color-border: hsl(225 18% 18%);
+  --color-input: hsl(225 18% 16%);
+  --color-ring: hsl(245 90% 70%);
+  --color-primary: hsl(245 90% 70%);
+  --color-primary-foreground: hsl(225 30% 6%);
+  --color-secondary: hsl(225 18% 14%);
+  --color-secondary-foreground: hsl(220 18% 96%);
+  --color-accent: hsl(160 70% 50%);
+  --color-warn: hsl(38 92% 60%);
+  --color-danger: hsl(0 72% 64%);
+  --color-layer-app: hsl(245 90% 72%);
+  --color-layer-transport: hsl(190 80% 60%);
+  --color-layer-network: hsl(160 70% 52%);
+  --color-layer-link: hsl(38 92% 60%);
+  --color-layer-physical: hsl(0 0% 70%);
+
+  --shadow-soft: 0 4px 24px -8px rgb(0 0 0 / 0.4);
+  --shadow-glow: 0 0 0 1px rgb(129 140 248 / 0.3), 0 8px 32px -8px rgb(129 140 248 / 0.45);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--color-border);
+}
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
 }
