@@ -9,7 +9,7 @@ Bloom's taxonomy, Constructivism) and every concept can be touched, dragged, and
 
 ## Live demo
 
-A Vercel deployment URL will be added here after the first deploy.
+**https://netlab-opal.vercel.app**
 
 ## Modules
 
