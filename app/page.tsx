@@ -25,7 +25,7 @@ export default function HomePage() {
               <span className="text-primary"> you can actually click on.</span>
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground">
-              NetLab turns the Kurose &amp; Ross syllabus into five hands-on, animated labs —
+              NetLab turns the Kurose &amp; Ross syllabus into six hands-on, animated labs —
               from packet encapsulation to RSA — designed for the way CEIT students learn best.
             </p>
             <div className="flex flex-wrap gap-3">
@@ -43,7 +43,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-6 grid grid-cols-1 gap-4 text-sm text-muted-foreground sm:grid-cols-3">
-              <Stat icon={Layers} label="5 interactive labs" />
+              <Stat icon={Layers} label="6 interactive labs" />
               <Stat icon={Activity} label="100 quiz questions" />
               <Stat icon={GraduationCap} label="Pedagogy-first design" />
             </div>
@@ -57,7 +57,7 @@ export default function HomePage() {
           <div className="mb-10 flex items-end justify-between gap-4">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                Five labs. One stack.
+                Six labs. One stack.
               </h2>
               <p className="mt-1 text-muted-foreground">
                 Each lab maps to specific Kurose &amp; Ross chapters and Bloom-taxonomy levels.

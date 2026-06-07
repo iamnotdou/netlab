@@ -4,6 +4,7 @@ import {
   Search,
   Network as NetworkIcon,
   KeyRound,
+  Route,
   type LucideIcon,
 } from "lucide-react";
 
@@ -68,6 +69,18 @@ export const MODULES: NetlabModule[] = [
     chapter: "Ch. 4",
     topics: ["IPv4", "CIDR", "Masking", "Drill"],
     icon: NetworkIcon,
+    accent: "network",
+  },
+  {
+    slug: "routing-lab",
+    title: "Routing Lab",
+    href: "/lab/routing-lab",
+    tagline: "Watch Dijkstra build a forwarding table.",
+    description:
+      "Set link costs on a 7-router mesh and step through Dijkstra's shortest-path algorithm node by node — the distance table, frontier, and shortest path update live as the router converges.",
+    chapter: "Ch. 5",
+    topics: ["Routing", "Dijkstra", "OSPF", "Link-state"],
+    icon: Route,
     accent: "network",
   },
   {

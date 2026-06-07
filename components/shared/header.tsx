@@ -12,6 +12,7 @@ const NAV = [
   { href: "/lab/tcp-handshake", label: "TCP Handshake" },
   { href: "/lab/dns-detective", label: "DNS Detective" },
   { href: "/lab/subnet-trainer", label: "Subnet Trainer" },
+  { href: "/lab/routing-lab", label: "Routing" },
   { href: "/lab/crypto-playground", label: "Crypto" },
   { href: "/quiz", label: "Quiz" },
   { href: "/dashboard", label: "Dashboard" },
