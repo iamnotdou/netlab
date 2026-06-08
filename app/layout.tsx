@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
+import { CommandPalette } from "@/components/shared/command-palette";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Header />
+          <CommandPalette />
           <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>
