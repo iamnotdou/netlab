@@ -2,7 +2,7 @@
 
 > **Team 12 — Doguhan Ozyilmaz** · BTO3102 Computer Networks · Spring 2026 · YTÜ BÖTE
 
-NetLab is a hands-on, animated learning environment that turns the BTO3102 syllabus into five
+NetLab is a hands-on, animated learning environment that turns the BTO3102 syllabus into six
 interactive labs and a 100-question quiz arena. It is built with the way CEIT/BÖTE students
 learn in mind — every interaction is grounded in pedagogy (Mayer's multimedia principles,
 Bloom's taxonomy, Constructivism) and every concept can be touched, dragged, and replayed.
@@ -19,7 +19,8 @@ Bloom's taxonomy, Constructivism) and every concept can be touched, dragged, and
 | 2 | **TCP Handshake Lab** | SYN / SYN-ACK / ACK animation synced with both state machines | 3 |
 | 3 | **DNS Detective** | Recursive resolution topology with animated query/referral/answer hops | 2 |
 | 4 | **Subnet Trainer** | CIDR slider + bit grid visualization + 8-question drill mode | 4 |
-| 5 | **Crypto Playground** | Caesar, Vigenère, mini RSA, hash avalanche | 8 |
+| 5 | **Routing Lab** | Step-by-step Dijkstra on a 7-router mesh with editable link costs and a live distance table | 5 |
+| 6 | **Crypto Playground** | Caesar, Vigenère, mini RSA, hash avalanche | 8 |
 
 Plus:
 
@@ -27,6 +28,8 @@ Plus:
   Confetti + downloadable PNG certificate on a passing score.
 - **Dashboard** — local-storage-persisted history with Recharts radar (best per category) and
   recent-attempts bar chart.
+- **Command palette** — press <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or `/`) anywhere to fuzzy-jump
+  to any lab, quiz, or page with full keyboard navigation.
 
 ## Pedagogical framing
 
@@ -57,7 +60,7 @@ learning theory:
 
 ```
 app/                  # Next.js routes
-  lab/<slug>/         # Five lab pages
+  lab/<slug>/         # Six lab pages
   quiz/[category]/    # Statically-rendered quiz routes
   dashboard/          # Personal stats
 components/
