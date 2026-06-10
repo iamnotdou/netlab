@@ -13,7 +13,7 @@ Bloom's taxonomy, Constructivism) and every concept can be touched, dragged, and
 
 ## 🎥 Presentation
 
-> **[📑 Watch the project presentation on Google Drive](https://drive.google.com/file/d/1r6xAl1Wgu9s_vWsVzGgdHcXxCgg_9n5J/view?usp=drive_link)**
+> **[📑 Watch the project presentation on Google Drive](https://drive.google.com/file/d/1r6xAl1Wgu9s_vWsVzGgdHcXxCgg_9n5J/view)**
 
 ## Modules
 
