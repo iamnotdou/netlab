@@ -11,6 +11,10 @@ Bloom's taxonomy, Constructivism) and every concept can be touched, dragged, and
 
 **https://netlab-opal.vercel.app**
 
+## 🎥 Presentation
+
+> **[📑 Watch the project presentation on Google Drive](https://drive.google.com/file/d/1r6xAl1Wgu9s_vWsVzGgdHcXxCgg_9n5J/view?usp=drive_link)**
+
 ## Modules
 
 | # | Module | Topic | Chapter |
